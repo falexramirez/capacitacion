@@ -1,0 +1,14 @@
+<div class="container">
+    <app-header-carousel
+        (changeInterval)="onIntervalChanged($event)" >
+    </app-header-carousel>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">    
+        <app-carousel
+            [intervalo]="intervalo"
+            [listaImagenes]="listaImagenes">
+        </app-carousel>  
+      </div>
+    </div>
+  </div>

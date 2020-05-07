@@ -1,0 +1,12 @@
+<ngb-carousel 
+  [pauseOnHover]="false" 
+  [showNavigationArrows]="false" 
+  [interval]="intervalo"
+  [showNavigationIndicators]="false">
+    <ng-template *ngFor="let imagen of listaImagenes" ngbSlide>
+      <app-slide
+        [imagen]="imagen" 
+      ></app-slide>
+    </ng-template>
+</ngb-carousel>
+<!-- <h6>Intervalo: {{intervalo}}</h6> -->
