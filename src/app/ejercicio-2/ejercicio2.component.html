@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-header">
+        <app-game-control
+        (startGame)="onGameStarted($event)"
+        ></app-game-control>
+    </div>
+    <div class="card-body">
+        <div style="display: inline-flex;">
+            <div class="card">
+                <div class="card-header">
+                    Números Pares
+                </div>
+                <div class="card-body">
+                    <app-numero-par [numerosPares]="numerosPares"></app-numero-par>
+                </div>
+            </div>
+            &nbsp;
+            <div class="card">
+                <div class="card-header">
+                    Números Impares
+                </div>
+                <div class="card-body">
+                    <app-numero-impar [numerosImpares]="numerosImpares"></app-numero-impar>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

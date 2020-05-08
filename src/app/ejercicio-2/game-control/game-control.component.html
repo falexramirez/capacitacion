@@ -1,0 +1,11 @@
+<div style="display: inline-flex;">
+    <button class="btn btn-success m-r-5" (click)="onStartGame()">
+        Iniciar Juego
+    </button>
+    &nbsp;
+    <input type="hidden" [(ngModel)]="runChangeDetection" />
+    &nbsp;
+    <button class="btn btn-danger m-r-5" (click)="onStopGame()">
+        Detener Juego
+    </button>
+</div>
